@@ -1,0 +1,8 @@
+package vendor.semc.hardware.charger@1.0;
+
+enum SmartChargeAction : int32_t {
+	DEACTIVATE,
+	ACTIVATE,
+	SUSPEND,
+	RESUME,
+};
