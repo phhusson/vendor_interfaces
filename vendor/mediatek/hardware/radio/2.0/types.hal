@@ -1,0 +1,8 @@
+package vendor.mediatek.hardware.radio@2.0;
+
+import android.hardware.radio@1.0::types;
+
+struct MtkDataProfileInfo {
+	android.hardware.radio@1.0::DataProfileInfo dpi;
+	int32_t inactiveTimer;
+};
