@@ -5,6 +5,8 @@ filegroup {
     srcs: [
         "types.hal",
         "IRadio.hal",
+        "IRadioIndication.hal",
+        "IRadioResponse.hal",
     ],
 }
 
@@ -18,6 +20,8 @@ genrule {
     out: [
         "vendor/mediatek/hardware/radio/2.0/types.cpp",
         "vendor/mediatek/hardware/radio/2.0/RadioAll.cpp",
+        "vendor/mediatek/hardware/radio/2.0/RadioIndicationAll.cpp",
+        "vendor/mediatek/hardware/radio/2.0/RadioResponseAll.cpp",
     ],
 }
 
@@ -36,6 +40,16 @@ genrule {
         "vendor/mediatek/hardware/radio/2.0/BnHwRadio.h",
         "vendor/mediatek/hardware/radio/2.0/BpHwRadio.h",
         "vendor/mediatek/hardware/radio/2.0/BsRadio.h",
+        "vendor/mediatek/hardware/radio/2.0/IRadioIndication.h",
+        "vendor/mediatek/hardware/radio/2.0/IHwRadioIndication.h",
+        "vendor/mediatek/hardware/radio/2.0/BnHwRadioIndication.h",
+        "vendor/mediatek/hardware/radio/2.0/BpHwRadioIndication.h",
+        "vendor/mediatek/hardware/radio/2.0/BsRadioIndication.h",
+        "vendor/mediatek/hardware/radio/2.0/IRadioResponse.h",
+        "vendor/mediatek/hardware/radio/2.0/IHwRadioResponse.h",
+        "vendor/mediatek/hardware/radio/2.0/BnHwRadioResponse.h",
+        "vendor/mediatek/hardware/radio/2.0/BpHwRadioResponse.h",
+        "vendor/mediatek/hardware/radio/2.0/BsRadioResponse.h",
     ],
 }
 
