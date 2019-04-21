@@ -1,16 +1,18 @@
 package vendor.mediatek.hardware.radio@2.0;
 
 import android.hardware.radio@1.1::IRadio;
+import vendor.mediatek.hardware.radio@2.0::IRadioResponse;
+import vendor.mediatek.hardware.radio@2.0::IRadioIndication;
 
 interface IRadio extends android.hardware.radio@1.1::IRadio {
-	setResponseFunctionMtk(); //setResponseFunctionMtk(IRadioResponse responseCb, IRadioIndication indicationCb);
-	setResponseFunctionIms(); //setResponseFunctionIms(IImsRadioResponse reseponseCb, IImsRadioIndication indicationCb);
+	setResponseFunctionsMtk(IRadioResponse responseCb, IRadioIndication indicationCb); //setResponseFunctionMtk(IRadioResponse responseCb, IRadioIndication indicationCb);
+	setResponseFunctionsIms(); //setResponseFunctionIms(IImsRadioResponse reseponseCb, IImsRadioIndication indicationCb);
 
 	oneway setTrm(); // oneway setTrm(int32_t, int32_t);
 	oneway getATR(); // oneway getATR(int32_t);
 	oneway setSimPower(); // oneway setSimPower(int32_t, int32_t);
 	oneway hangupAll(); // oneway hangupAll(int32_t);
-	oneway setCallIndication(); // oneway setCallIndication(int32_t, int32_t, int32_t, int32_t);
+	oneway setCallIndication(int32_t serial, int32_t mode, int32_t callId, int32_t seqNo); // oneway setCallIndication(int32_t, int32_t, int32_t, int32_t);
 	oneway emergencyDial(); // oneway emergencyDial(int32_t, Dial);
 	oneway setEccServiceCategory(); // oneway setEccServiceCategory(int32_t, int32_t);
 	oneway setEccList(); // oneway setEccList(int32_t, string, string);
