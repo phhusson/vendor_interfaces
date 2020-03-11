@@ -3,7 +3,6 @@
 hidl_interface {
     name: "vendor.samsung.hardware.biometrics.fingerprint@2.1",
     root: "vendor",
-    product_specific: true,
     srcs: [
         "ISecBiometricsFingerprint.hal",
     ],

@@ -3,7 +3,6 @@
 hidl_interface {
     name: "vendor.goodix.extend.service@2.0",
     root: "vendor",
-    product_specific: true,
     srcs: [
         "types.hal",
         "IGoodixFPExtendService.hal",
