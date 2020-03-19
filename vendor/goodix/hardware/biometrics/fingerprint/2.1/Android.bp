@@ -3,7 +3,6 @@
 hidl_interface {
     name: "vendor.goodix.hardware.biometrics.fingerprint@2.1",
     root: "vendor",
-    product_specific: true,
     srcs: [
         "IGoodixFingerprintDaemon.hal",
         "IGoodixFingerprintDaemonCallback.hal",
