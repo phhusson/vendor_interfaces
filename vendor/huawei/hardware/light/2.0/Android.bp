@@ -4,7 +4,7 @@ hidl_interface {
     name: "vendor.huawei.hardware.light@2.0",
     root: "vendor",
     srcs: [
-        "IHwLight.hal",
+        "ILight.hal",
     ],
     interfaces: [
         "android.hardware.light@2.0",
