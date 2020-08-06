@@ -168,7 +168,12 @@ CM_COLOR_GAMUT = 0x204,
 CM_COLOR_TEMP_MODE = 0x203,
 COLOR_TEMP_VALUE = 0x205,
 DATA_GAIN = 0x200,
-DISPLAY_BRIGHTNESS = 0x202,
+
+//Usages:
+//irisConfigureSet(DISPLAY_BRIGHTNESS, {8192}) for doze/sleep;
+//irisConfigureSet(DISPLAY_BRIGHTNESS, {Integer.valueOf(((int) ((((double) brightness) / (((double) LocalDisplayDevice.this.mMaxBrightness) + 0.0d)) * 4095.0d)) + 10000)});
+DISPLAY_BRIGHTNESS = 0x202,  
+
 FORCE_LUT = 0x201,
 PQ_TARGET = 0x207,
 TYPE_MAX = 0x209,
