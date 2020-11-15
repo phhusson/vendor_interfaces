@@ -1,6 +1,6 @@
 package vendor.oneplus.hardware.display@1.0;
 
-stsruct ColorGamut {
+struct ColorGamut {
     uint32_t[3] red;
     uint32_t[3] green;
     uint32_t[3] blue;
