@@ -1,0 +1,10 @@
+package vendor.ims.zenmotion@1.0;
+
+interface IZenMotion {
+    setDclickEnable(uint32_t enable);
+    setSwipeUpEnable(uint32_t enable);
+    setTouchGestureType(string str);
+    getDclickStatus() generates (uint16_t res);
+    getSwipeUpEnable() generates (uint16_t res);
+    getTouchGestureType() generates (uint16_t res);
+};
