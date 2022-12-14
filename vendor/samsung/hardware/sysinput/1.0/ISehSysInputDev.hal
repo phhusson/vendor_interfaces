@@ -8,6 +8,7 @@ interface ISehSysInputDev {
     getTspCommandList(uint32_t devid) generates (uint32_t retval, string outbuf);
     getTspAodActiveArea(uint32_t devid) generates (uint32_t retval, string outbuf);
     getTspFodInformation(uint32_t devid) generates (uint32_t retval, string outbuf);
+    getTspFodPosition(uint32_t devid) generates (uint32_t retval, string outbuf);
     runSpenCmd(string cmdname) generates (uint32_t retval, string outbuf);
     getSpenPosition() generates (uint32_t retval, string outbuf);
     getSpenCommandList() generates (uint32_t retval, string outbuf);
